@@ -4,7 +4,9 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div>
-        <h1>Start Building React Application!</h1>
+        <section>
+          {this.props.children}
+        </section>
       </div>
     );
   }
