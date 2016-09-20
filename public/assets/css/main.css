@@ -3,6 +3,7 @@ html {
   padding: 0;
 }
 body {
+  background-color: #343333;
   font-family: geneva;
   margin: 0;
   padding: 0;
@@ -35,6 +36,9 @@ header nav ul li:not(:last-child) a:hover {
   margin: 75px auto;
   width: 375px;
 }
+#cta article h2 {
+  font-size: 30px;
+}
 #cta article h2:not(:last-of-type) {
   padding: 10px 0;
 }
@@ -44,10 +48,69 @@ header nav ul li:not(:last-child) a:hover {
 #cta article div a:first-of-type {
   margin-right: 20px;
 }
+#features h3, #pricing h3, #contact h3 {
+  width: 100%;
+}
+#features article.featureList, #contact article.contactList {
+  width: 100%;
+}
+#features article.featureList:first-of-type {
+  margin-bottom: 20px;
+}
+#features article.featureList:not(:first-of-type) {
+  margin-bottom: 0;
+}
+#features article.featureList:last-of-type {
+  padding-bottom: 40px;
+}
+#features article.featureList div.feature, #contact article.contactList div.contact {
+  width: 100%;
+}
+#features article.featureList div.feature p, #contact article.contactList div.contact p {
+  margin: 0 auto;
+  width: 75%;
+}
+#pricing article {
+  width: 100%;
+}
+#pricing article div.planWrapper:not(:last-of-type) {
+  margin-right: 30px;
+}
+#pricing article div.planWrapper div.planContainer {
+  border: solid 1px black;
+}
+#pricing article div.planWrapper div.planContainer > p {
+  margin: 0;
+}
+#pricing article div.planWrapper div.planContainer > p:not(:last-of-type) {
+  border-bottom: solid 1px black;
+  margin: 10px 0;
+}
+#contact article.contactList div.contact:last-of-type p:first-of-type::before {
+  background-image: url('../imgs/facebook.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  content: "img";
+}
+#contact article.contactList div.contact:last-of-type p:nth-of-type(2)::before {
+  background-image: url('../imgs/twitter.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  content: "img";
+}
+#contact article.contactList div.contact:last-of-type p:last-of-type::before {
+  background-image: url('../imgs/instagram.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  content: "img";
+}
 
 @media screen and (min-width: 460px) {
   header h1 {
     margin-left: 30px;
+  }
+  #features h3, #pricing h3, #contact h3 {
+    width: 460px;
   }
 }
 @media screen and (min-width: 490px) {
@@ -63,6 +126,11 @@ header nav ul li:not(:last-child) a:hover {
     font-size: 45px;
   }
 }
+@media screen and (min-width: 617px) {
+  #features h3, #pricing h3, #contact h3 {
+    width: 617px;
+  }
+}
 @media screen and (min-width: 800px) {
   #cta article {
     width: 800px;
@@ -76,6 +144,9 @@ header nav ul li:not(:last-child) a:hover {
   #cta article h2:not(:last-of-type) {
     padding: 0;
   }
+  #pricing article {
+    width: 911px;
+  }
 }
 @media screen and (min-width: 1026px) {
   header nav ul li:first-of-type {
@@ -83,5 +154,36 @@ header nav ul li:not(:last-child) a:hover {
   }
   header nav ul li:not(:first-of-type) {
     display: inline-block;
+  }
+}
+@media screen and (min-width: 1040px) {
+  #features article.featureList, #contact article.contactList {
+    width: 971px;
+  }
+  #features article.featureList div.feature:not(:last-of-type), #contact article.contactList div.contact:not(:last-of-type) {
+    margin-right: 30px;
+  }
+  #features article.featureList div.feature, #contact article.contactList div.contact {
+    width: 300px;
+  }
+  #features article.featureList div.feature p, #contact article.contactList div.contact p {
+    margin: 0;
+    width: 94%;
+  }
+}
+@media screen and (min-width: 1125px) {
+  #features article.featureList, #contact article.contactList {
+    width: 1121px;
+  }
+  #features article.featureList div.feature, #contact article.contactList div.contact {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #features article.featureList, #contact article.contactList {
+    width: 1277px;
+  }
+  #features article.featureList div.feature, #contact article.contactList div.contact {
+    width: 402px;
   }
 }

@@ -7,7 +7,6 @@ export default class Header extends React.Component {
     const logo = {
       display: 'inline-block',
       height: 56,
-      margin: 0,
       marginTop: 18,
       padding: 0,
       textIndent: -9999,

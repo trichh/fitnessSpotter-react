@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 export default class Nav extends React.Component {
   render() {
@@ -7,7 +8,6 @@ export default class Nav extends React.Component {
       float: 'right',
       marginBottom: 30,
       marginLeft: 0,
-      marginRight: 0,
       marginTop: 30
     }
     const linkList = {
@@ -49,8 +49,8 @@ export default class Nav extends React.Component {
           <li><a style={linkFont} href="#features">Features</a></li>
           <li><a style={linkFont} href="#pricing">Pricing</a></li>
           <li><a style={linkFont} href="#contact">Contact</a></li>
-          <li><a style={linkFont} href="/login">Sign in</a></li>
-          <li style={button}><a style={linkFont} href="/register">Sign up</a></li>
+          <li><Link style={linkFont} to="login">Sign in</Link></li>
+          <li style={button}><Link style={linkFont} to="register">Sign up</Link></li>
         </ul>
       </nav>
     );

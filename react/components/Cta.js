@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 import Header from '../components/Header';
 
@@ -10,7 +11,6 @@ export default class Cta extends React.Component {
     }
     const ctaTitle = {
       color: 'white',
-      fontSize: 30,
       margin: 0,
       textAlign: 'center',
       width: '100%'
@@ -45,8 +45,8 @@ export default class Cta extends React.Component {
           <h2 style={ctaTitle}>Watch your clients and business <span style={ctaTitleColor}>GROW!</span></h2>
           <h2 style={ctaTitle}>Services <span style={ctaTitleColor}>free</span> until November 5, 2016.</h2>
           <div style={ctaLinks}>
-            <a href="">Find gym</a>
-            <a href="/register">Join now</a>
+            <a style={ctaLink} href="">Find gym</a>
+            <Link style={ctaLink} to="register">Join now</Link>
           </div>
         </article>
       </section>

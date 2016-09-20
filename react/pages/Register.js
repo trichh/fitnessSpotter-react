@@ -1,10 +1,10 @@
 import React from "react";
 
-export default class Layout extends React.Component {
+export default class Register extends React.Component {
   render() {
     return (
       <div>
-        {this.props.children}
+        <h1>Register Page</h1>
       </div>
     );
   }
