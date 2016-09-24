@@ -25,8 +25,8 @@ export default class Feature extends React.Component {
     }
     return (
       <div class="feature" style={feature}>
-        <h4 style={featureTitle}>Add New Clients</h4>
-        <p style={featureText}>When adding a new client, trainers are able to assign them custom workout plans, custom meal plans and give them assessments. Clients will have a  profile page that lists their workout plan, meal plan, client assessment and graph of progression.</p>
+        <h4 style={featureTitle}>{this.props.title}</h4>
+        <p style={featureText}>{this.props.text}</p>
       </div>
     );
   }
