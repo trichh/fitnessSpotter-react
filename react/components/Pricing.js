@@ -1,9 +1,11 @@
+// Import react
 import React from 'react';
-
+// Importing the PricingList component
 import PricingList from './Pricing/PricingList';
-
+// Exporting the Pricing component to use in ../pages/Home.js
 export default class Pricing extends React.Component {
   render() {
+    // Styling rule for element
     const pricingTitle = {
       color: 'white',
       fontSize: 45,

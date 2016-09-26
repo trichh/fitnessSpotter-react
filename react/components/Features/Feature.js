@@ -1,7 +1,9 @@
+// Importing react
 import React from 'react';
-
+// Exporting the Feature component to use in the FeatureList component
 export default class Feature extends React.Component {
   render() {
+    // Styling rules for elements
     const feature = {
       display: 'inline-block'
     }

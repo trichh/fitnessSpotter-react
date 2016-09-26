@@ -1,7 +1,9 @@
+// Importing react
 import React from 'react';
-
+// Exporitng the Price component to use in the PricingList component
 export default class Price extends React.Component {
   render() {
+    // Styling rules for elements
     const planWrapper = {
       display: 'inline-block',
       marginBottom: 10,
@@ -39,6 +41,7 @@ export default class Price extends React.Component {
       padding: 0,
       textAlign: 'center'
     }
+    // Assigning div element an id equal to the title for each Price component
     let planId = this.props.title.toLowerCase();
     return (
       <div class="planWrapper" style={planWrapper}>

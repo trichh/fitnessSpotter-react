@@ -1,9 +1,11 @@
+// Importing react
 import React from 'react';
-
+// Imporitng the FeatureList component
 import FeatureList from './Features/FeatureList';
-
+// Exporting the Features component to use in ../pages/Home.js
 export default class Features extends React.Component {
   render() {
+    // Styling rules for elements
     const features = {
       backgroundColor: '#F5F8FA'
     }
