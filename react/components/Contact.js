@@ -1,9 +1,11 @@
+// Importing react
 import React from 'react';
-
+// Importing the ContactList component
 import ContactList from './Contact/ContactList';
-
+// Exporting the Contact component to use in ../pages/Home.js
 export default class Contact extends React.Component {
   render() {
+    // Styling rules for elements
     const contact = {
       backgroundColor: '#F5F8FA'
     }
@@ -18,8 +20,8 @@ export default class Contact extends React.Component {
     }
     return (
       <section id="contact" style={contact}>
-      <h3 style={contactTitle}>We Want To Hear From You!</h3>
-      <ContactList />
+        <h3 style={contactTitle}>We Want To Hear From You!</h3>
+        <ContactList />
       </section>
     );
   }

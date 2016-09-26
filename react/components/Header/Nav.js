@@ -1,8 +1,10 @@
+// Importing react and react features
 import React from 'react';
 import {Link} from 'react-router';
-
+// Exporting the Nav component to use in ../Header.js
 export default class Nav extends React.Component {
   render() {
+    // Styling rules for elements
     const nav = {
       display: 'inline-block',
       float: 'right',

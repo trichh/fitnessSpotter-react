@@ -1,8 +1,10 @@
+// Importing EventEmitter
 import {EventEmitter} from 'events';
-
+// Features store sets and gets state to display feature titles and texts on the home page
 class FeaturesStore extends EventEmitter {
   constructor() {
       super();
+      // Setting state for features
       this.features = [
         {
           text: "When adding a new client, trainers are able to assign them custom workout plans, custom meal plans and give them assessments. Clients will have a profile page that lists their workout plan, meal plan, client assessment and graph of progression.",
@@ -30,12 +32,12 @@ class FeaturesStore extends EventEmitter {
         }
       ];
   }
-
+  // Gets all of the features
   getFeatures() {
     return this.features;
   }
 }
-
+// Instantiating class
 const featuresStore = new FeaturesStore;
-
+// Exporting store to use in the FeatureList component
 export default featuresStore;

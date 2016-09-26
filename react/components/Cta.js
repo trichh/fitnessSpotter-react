@@ -1,10 +1,12 @@
+// Importing  react and react features
 import React from 'react';
 import {Link} from 'react-router';
-
+// Importing the Header component
 import Header from '../components/Header';
-
+// Exporting the Cta component to use in ../pages/Home.js
 export default class Cta extends React.Component {
   render() {
+    // Styling rules for elements
     const cta = {
       height: 700,
       width: '100%'
