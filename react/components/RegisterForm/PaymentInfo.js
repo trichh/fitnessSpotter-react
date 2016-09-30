@@ -3,53 +3,107 @@ import React from 'react';
 // Exporting the PaymentInfo component to use in the RegisterForm component
 export default class PaymentInfo extends React.Component {
   render() {
+    const paymentInfoTitle = {
+      borderBottom: 'solid 1 white',
+      color: 'white',
+      fontSize: 25
+    }
+    const paymentInfoLabel = {
+      color: 'white',
+      display: 'block',
+      fontSize: 23,
+      paddingBottom: 5
+    }
+    const paymentInfoInput = {
+      borderRadius: 2,
+      height: 25,
+      marginBottom: 10,
+      width: 279
+    }
+    const planWrapper = {
+      display: 'inline-block',
+      marginBottom: 10,
+      width: 280
+    }
+    const planContainer = {
+      marginBottom: 10
+    }
+    const planTitle = {
+      color: 'white',
+      fontSize: 28,
+      marginBottom: 10,
+      marginLeft: 0,
+      marginRight: 0,
+      marginTop: 10,
+      padding: 0,
+      textAlign: 'center'
+    }
+    const price = {
+      color: 'white',
+      fontSize: 55,
+      marginBottom: 10,
+      marginLeft: 0,
+      marginRight: 0,
+      marginTop: 0,
+      padding: 0,
+      textAlign: 'center'
+    }
+    const perks = {
+      color: 'white',
+      fontSize: 23,
+      padding: 0,
+      textAlign: 'center'
+    }
+    const paymentInfoRadio = {
+      marginLeft: 130
+    }
     return (
       <div>
-        <h3>Payment info</h3>
-        <label>Monthly plan</label>
-        <div class="planWrapper">
-          <div class="planContainer">
-            <div id="basic">
-              <h4>Baisc</h4>
-              <p>$20</p>
+        <h3 style={paymentInfoTitle}>Payment info</h3>
+        <label style={paymentInfoLabel}>Monthly plan</label>
+        <div class="planWrapper" style={planWrapper}>
+          <div class="planContainer" style={planContainer}>
+            <div class="plan">
+              <h4 style={planTitle}>Baisc</h4>
+              <p style={price}>$20</p>
             </div>
-            <p>1 Trainer</p>
-            <p>Unlimited clients</p>
-            <p>All features</p>
+            <p style={perks}>1 Trainer</p>
+            <p style={perks}>Unlimited clients</p>
+            <p style={perks}>All features</p>
           </div>
-          <input type="radio" value="basic" />
+          <input style={paymentInfoRadio} type="radio" value="basic" />
         </div>
-        <div class="planWrapper">
-          <div class="planContainer">
-            <div id="plus">
-              <h4>Plus</h4>
-              <p>$45</p>
+        <div class="planWrapper" style={planWrapper}>
+          <div class="planContainer" style={planContainer}>
+            <div class="plan">
+              <h4 style={planTitle}>Plus</h4>
+              <p style={price}>$45</p>
             </div>
-            <p>2-5 Trainers</p>
-            <p>Unlimited clients</p>
-            <p>All features</p>
+            <p style={perks}>2-5 Trainers</p>
+            <p style={perks}>Unlimited clients</p>
+            <p style={perks}>All features</p>
           </div>
-          <input type="radio" value="plus" />
+          <input style={paymentInfoRadio} type="radio" value="plus" />
         </div>
-        <div class="planWrapper">
-          <div class="planContainer">
-            <div id="premium">
-              <h4>Premium</h4>
-              <p>$75</p>
+        <div class="planWrapper" style={planWrapper}>
+          <div class="planContainer" style={planContainer}>
+            <div class="plan">
+              <h4 style={planTitle}>Premium</h4>
+              <p style={price}>$75</p>
             </div>
-            <p>6+ Trainers</p>
-            <p>Unlimited clients</p>
-            <p>All features</p>
+            <p style={perks}>6+ Trainers</p>
+            <p style={perks}>Unlimited clients</p>
+            <p style={perks}>All features</p>
           </div>
-          <input type="radio" value="premium" />
+          <input style={paymentInfoRadio} type="radio" value="premium" />
         </div>
-        <label>Card holder name</label>
-        <input type="text" name="cardName" />
-        <label>Card number</label>
-        <input type="text" name="cardNumber" />
-        <label>Security code</label>
-        <input type="text" name="securityCode" />
-        <label>Expiration date</label>
+        <label style={paymentInfoLabel}>Card holder name</label>
+        <input style={paymentInfoInput} type="text" name="cardName" />
+        <label style={paymentInfoLabel}>Card number</label>
+        <input style={paymentInfoInput} type="text" name="cardNumber" />
+        <label style={paymentInfoLabel}>Security code</label>
+        <input style={paymentInfoInput} type="text" name="securityCode" />
+        <label style={paymentInfoLabel}>Expiration date</label>
         <select name="month">
           <option value="January">January</option>
           <option value="February">February</option>
