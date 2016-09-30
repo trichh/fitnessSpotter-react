@@ -73,16 +73,16 @@ header nav ul li:not(:last-child) a:hover {
 #pricing article {
   width: 100%;
 }
-#pricing article div.planWrapper:not(:last-of-type) {
+div.planWrapper:not(:last-of-type) {
   margin-right: 30px;
 }
-#pricing article div.planWrapper div.planContainer {
+div.planWrapper div.planContainer {
   border: solid 1px black;
 }
-#pricing article div.planWrapper div.planContainer > p {
+div.planWrapper div.planContainer > p {
   margin: 0;
 }
-#pricing article div.planWrapper div.planContainer > p:not(:last-of-type) {
+div.planWrapper div.planContainer > p:not(:last-of-type) {
   border-bottom: solid 1px black;
   margin: 10px 0;
 }
